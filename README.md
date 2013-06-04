@@ -1,4 +1,0 @@
-WSD
-===
-
-Class Material
