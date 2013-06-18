@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>HTML5 Elements </title>
+		<meta charset="utf-8" />
+
+	</head>
+	
+	<body>
+
+		<hgroup>
+
+			<h1>HTML5 Elements Learned in Lab5</h1>
+			<h2>Instructions</h2>
+
+		</hgroup>
+
+		<p>
+			<q>Implement each of the new elements you learned in lecture in your newly created document. Create a sound document that has the common elements (h1, h2, p, etc.), is semantic and well-structured, and contains comments.</q>
+		
+		<hr /> <!-- Makes horizontal line -->
+
+			<!-- ELEMENT LIST START -->
+
+		<ol>
+
+			<li>
+
+				<code>&lt;abbr&gt;</code> 
+
+				Explains the definition of an abbreviation. 
+
+				<p>ie: This is what <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr> abbreviation means.</p>
+
+			</li>
+			
+			<li>
+
+				<code>&lt;address&gt;</code>
+
+				 Represents the contact information for its enclosing section. If it is a child of the body element, then it applies to the document as a whole. And would appear usually in a footer for like contact email or links. Not to used for physical address. 
+				
+				<p>ie: 
+
+					<address>
+
+						<a href="../People/Raggett/">Dave Raggett</a>, <a href="../People/Arnaud/">Arnaud Le Hors</a>, <p>are contact persons for the <a href="Activity">W3C HTML Activity</a>
+
+					</address>
+
+				</p>
+
+			</li>
+		
+			<li>
+				<code>&lt;b&gt;</code> 
+
+				Represents a span of text to be stylistically offset from the normal prose without conveying any extra importance. Examples are key words in a document abstract, product names in a review, or other spans of text whose typical typographic presentation is bold. 
+
+				<p>ie: <b>Hell yea!</b></p>
+
+			</li>
+		
+			<li>
+				<code>&lt;i&gt;</code>
+
+				 Represents a span of text in an alternate voice or mood, or otherwise offset from the normal prose, such as a taxonomic designation, a technical term, an idiomatic phrase from another language, a thought, a ship name, or some other prose whose typical typographic presentation is italicized. 
+
+				<p>ie: Last night I ate <i lang="es" title="Dominos pizza.">Pizza!</i>.</p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;code&gt;</code>
+
+			 The code element represents a fragment of computer code. This could be an XML element name, a filename, a computer program, or any other string that a computer would recognize. It is being used at the beginning of every li. 
+
+				<p>ie: Every html document needs <code>&lt;doctype&gt;</code> at the top of the page.</p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;del&gt;</code> The del element represents a removal from the document. The del elements should not cross implied paragraph boundaries 
+
+				<p>ie: My favorite colour is <del datetime="2010-10-11T01:25-07:00">Red</del> <ins datetime="2010-10-11T01:25-07:01">yellow</ins>. Riiight?</p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;ins&gt;</code> The ins element represents an addition to the document. The ins elements should not cross implied paragraph boundaries. 
+				<p>ie: My favourite colour is <del datetime="2010-10-11T01:25-07:00">blue</del> <ins datetime="2010-10-11T01:25-07:01">red</ins>, but I also like green and yellow.</p>
+
+
+			</li>
+		
+			<li>
+
+				<code>&lt;details&gt;</code> The details element represents a disclosure widget from which the user can obtain additional information or controls. However, the details element is not appropriate for footnotes. Currently is only supported in Chrome. 
+				<p>ie: 
+
+					<details>
+
+        		<summary>Name of a good magazine</summary>
+
+					<p>Wired Magazine</p>
+
+					</details>
+				
+				</p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;summary&gt;</code> The summary element represents a summary, caption, or legend for the rest of the contents of the summary element's parent details element, if any.
+
+				<p>ie: <details><summary>More information </summary>
+
+        			<p>Here is the source data that is discussed in the article ...</p>
+				 
+				  </details>
+
+				</p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;dfn&gt;</code> The dfn element represents the defining instance of a term. The paragraph, description list group, or section that is the nearest ancestor of the dfn element must also contain the definition(s) for the term given by the dfn element. 
+				
+				<p>ie: While they're essential reading material for our job, the <dfn><abbr title="World Wide Web Consortium">W3C</abbr></dfn> specifications are not exactly George R. R. Martin-level reading material.
+				</p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;figure&gt;</code> The figure element represents some flow content, optionally with a caption, that is self-contained and is typically referenced as a single unit from the main flow of the document.
+
+				<p>ie:</p>
+
+					<figure><img src="img/web2.jpg" alt="Shiny office space" >
+        			<figcaption><em>Oh no</em> you didn't!
+        			</figcaption>
+					</figure>
+				
+			</li>
+		
+			<li>
+				<code>&lt;figcaption&gt;</code> The figcaption element represents a caption or legend for the rest of the contents of the figcaption element's parent figure element, if any.
+				
+				<p>ie: 
+					<figure><img src="img/web2.jpg" alt="Shiny office space" >
+        			<figcaption><em>This</em> is the caption
+        			</figcaption>
+					</figure>
+
+				</p>
+			</li>
+		
+			<li><code>&lt;hr /&gt;</code> Represents a paragraph-level thematic break. The "paragraph-level" bit means between blocks of text, so it can't be used to separate sections of a site. Instead, hr now separates different topics within a section of prose, or between scenes in a novel.
+				<p>ie:</p> 
+
+					<p>Phasellus eu adipiscing ante, eu ullamcorper nunc. Maecenas luctus euismod magna at lobortis. Sed ultrices, mauris sit amet aliquet luctus, lacus nisi lobortis nulla, ut tempor neque est eu ante. Aenean imperdiet sem in lorem ultrices auctor. Nullam iaculis ligula eget convallis volutpat. Phasellus tristique, purus accumsan tincidunt egestas, odio mauris semper nisi, a tristique nunc augue vitae leo. Cras placerat luctus eros eget eleifend. Nulla sed facilisis tortor. Morbi tincidunt fermentum dictum. Nullam sed eleifend dui. Fusce lobortis id nunc vitae malesuada. Sed commodo scelerisque congue. Praesent non luctus tellus, nec tempor purus.</p>
+
+					<p>Phasellus eu adipiscing ante, eu ullamcorper nunc. Maecenas luctus euismod magna at lobortis. Sed ultrices, mauris sit amet aliquet luctus, lacus nisi lobortis nulla, ut tempor neque est eu ante. Aenean imperdiet sem in lorem ultrices auctor. Nullam iaculis ligula eget convallis volutpat. Phasellus tristique, purus accumsan tincidunt egestas, odio mauris semper nisi, a tristique nunc augue vitae leo. Cras placerat luctus eros eget eleifend. Nulla sed facilisis tortor. Morbi tincidunt fermentum dictum. Nullam sed eleifend dui. Fusce lobortis id nunc vitae malesuada. Sed commodo scelerisque congue. Praesent non luctus tellus, nec tempor purus.</p>
+
+					<p>Phasellus eu adipiscing ante, eu ullamcorper nunc. Maecenas luctus euismod magna at lobortis. Sed ultrices, mauris sit amet aliquet luctus, lacus nisi lobortis nulla, ut tempor neque est eu ante. Aenean imperdiet sem in lorem ultrices auctor. Nullam iaculis ligula eget convallis volutpat. Phasellus tristique, purus accumsan tincidunt egestas, odio mauris semper nisi, a tristique nunc augue vitae leo. Cras placerat luctus eros eget eleifend. Nulla sed facilisis tortor. Morbi tincidunt fermentum dictum. Nullam sed eleifend dui. Fusce lobortis id nunc vitae malesuada. Sed commodo scelerisque congue. Praesent non luctus tellus, nec tempor purus.</p>
+
+				<hr /> <!-- Makes horizontal line -->
+
+					<p>Phasellus eu adipiscing ante, eu ullamcorper nunc. Maecenas luctus euismod magna at lobortis. Sed ultrices, mauris sit amet aliquet luctus, lacus nisi lobortis nulla, ut tempor neque est eu ante. Aenean imperdiet sem in lorem ultrices auctor. Nullam iaculis ligula eget convallis volutpat. Phasellus tristique, purus accumsan tincidunt egestas, odio mauris semper nisi, a tristique nunc augue vitae leo. Cras placerat luctus eros eget eleifend. Nulla sed facilisis tortor. Morbi tincidunt fermentum dictum. Nullam sed eleifend dui. Fusce lobortis id nunc vitae malesuada. Sed commodo scelerisque congue. Praesent non luctus tellus, nec tempor purus.</p>
+
+					<p>Phasellus eu adipiscing ante, eu ullamcorper nunc. Maecenas luctus euismod magna at lobortis. Sed ultrices, mauris sit amet aliquet luctus, lacus nisi lobortis nulla, ut tempor neque est eu ante. Aenean imperdiet sem in lorem ultrices auctor. Nullam iaculis ligula eget convallis volutpat. Phasellus tristique, purus accumsan tincidunt egestas, odio mauris semper nisi, a tristique nunc augue vitae leo. Cras placerat luctus eros eget eleifend. Nulla sed facilisis tortor. Morbi tincidunt fermentum dictum. Nullam sed eleifend dui. Fusce lobortis id nunc vitae malesuada. Sed commodo scelerisque congue. Praesent non luctus tellus, nec tempor purus. </p>
+				
+
+			</li>
+		
+			<li>
+
+				<code>&lt;kbd&gt;</code> The kbd element represents user input (typically keyboard input, although it may also be used to represent other input, such as voice commands).
+				<p>ie: Mac users: To take a screenshot press of a certain program <kbd><kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>4</kbd>+<kbd>Space</kbd></kbd></p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;mark&gt;</code> Represents a run of text in one document marked or highlighted because of its relevance in another context. 
+				<p>ie: Essentially mark is a <mark>highlighter</mark>. Can you see where it has been used?</p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;meter&gt;</code> When the meter binding applies to a meter element, the element is expected to render as an 'inline-block' box with a 'height' of '1em' and a 'width' of '5em', a 'vertical-align' of '-0.2em', and with its contents depicting a gauge.
+
+				<p>ie: Storage space usage: <meter value=6 max=8>6 blocks used (out of 8 total)</meter>
+					Voter turnout: <meter value=0.75><img alt="75%" src="graph75.png"></meter>
+					Tickets sold: <meter min="0" max="100" value="75"></meter>
+				</p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;pre&gt;</code> 
+
+				The pre element represents a block of preformatted text, in which structure is represented by typographic conventions rather than by elements.
+			<p>ie:  The pre preserves the poems formatting, which forms an intrinsic part of the poem itself </p>
+
+			<pre>               
+
+								 maxling
+
+				it is with a heart heavy
+				that i admit loss of a feline
+				so loveda friend lost to the
+       			unknown
+                                (night)
+
+				~cdr 11dec07
+
+	</pre>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;samp&gt;</code> The samp element represents (sample) output from a program or computing system
+				<p>ie:
+					<pre><samp>mike:mysite mike$ <kbd>git status</kbd>
+						# On branch master
+						nothing to commit (working directory clean)
+						mike:mysite mike$</samp></pre>
+				</p>
+			</li>
+		
+			<li><code>&lt;small&gt;</code> Represents side comments such as small print. It is not intended to be presentational. The small element should not be used for extended spans of text such as multiple paragraphs, lists, or sections of text. It is only intended for short runs of text.
+			<p>ie: where the copyright is small
+				
+				<footer>
+
+        	<address>
+
+       			 For more details, contact
+        		<a href="mailto:hello@html5doctor.com">HTML5 Doctor</a>.
+
+       		 </address>
+
+        		<small> © copyright HTML5 Doctor. </small>
+
+				</footer>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;sub&gt;</code> The sub element can be used inside a var element, for variables that have subscripts.
+
+				<p>ie: H<sub>2</sub>O is the chemical formula for water
+				</p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;sup&gt;</code> The sup element represents a superscript and the sub element represents a subscript.
+			<p>ie: Today is the 5<sup>th</sup> of December</p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;time&gt;</code> Represents a precise date and/or time in the proleptic Gregorian calendar. The time element encodes modern dates and times in a machine-readable way, so that, for example, user agents could offer to add an event to the user's calendar.
+			<p>ie: <time>2011-11-12T14:54</time> </p>
+
+			</li>
+		
+			<li>
+
+				<code>&lt;var&gt;</code> The var element represents a variable. This could be an actual variable in a mathematical expression or programming context, or it could just be a term used as a placeholder in prose.
+
+				<p>ie: <var>E</var> energy is equal to <var>m</var> mass multiplied by the <var>c</var> speed of light, squared.</p>
+
+			</li>
+
+		</ol> 	<!-- Close Element List -->
+
+			<!-- Element List End -->
+			
+	</body>
+</html>
