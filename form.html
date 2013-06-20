@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		
+		<title>Todays thing</title>
+		<meta charset="utf-8" />
+	
+	</head>
+	
+	<body>
+
+		<h1>Random Survey</h1>
+
+		<form name="input" action="email" method="get">
+
+			<p>About You</p>
+			
+			First name: <input type="text" name="firstname"> <br />
+			
+			Male <input type="radio" name="sex" value="male">
+			
+			Female <input type="radio" name="sex" value="female"><br />
+			
+			<p>Do you own a type of transportation?<p>
+
+				<small>Choose all that apply</small><br />
+
+					<input type="checkbox" name="vehicle" value="Skateboard">Skateboard 
+					<input type="checkbox" name="vehicle" value="Rollerblades">Motorcycle<br />
+					<input type="checkbox" name="vehicle" value="Bike">Bike
+					<input type="checkbox" name="vehicle" value="Car">Car
+
+			<p>What is your favorite form of transportation</p>
+				 <select>
+ 					<option value="Bike">Bike</option>
+ 					<option value="Car">Car</option>
+  					<option value="Rollerblades">Motorcycle</option>
+  					<option value="Skateboard">Skateboard</option>
+				</select> 
+
+				<p>Why</p>
+					
+					<textarea rows="4" cols="50">Briefly tell us why it's your favorite form of transportation.</textarea> 
+
+			<p>Submit your Survey</p>
+
+				<input type="submit" value="Submit">
+
+		</form> 
+	
+	<form method="get" action="http://en.wikipedia.org/w/index.php">
+
+			Search Wikipedia <input type="search" name="search" /> <input type="submit" value="Search" />	
+
+	</form>
+	
+	</body>
+</html>
