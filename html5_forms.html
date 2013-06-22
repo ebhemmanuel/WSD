@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>Holiday Invite</title>
+
+		<meta charset="utf-8">
+
+</head>
+
+<body>
+
+
+	<h1>Welcome to the jungle</h1>
+
+		<h2><strong>WE GOT FUN AND GAMES...</strong>But first, we need your information.</h2>
+
+<form>
+
+	<h3>Name:</h3>
+
+		<label>First: </label><input type="text" name="firstname" autofocus= “autofocus” required= “required”>
+
+		<label>Last: </label><input type="text" name="lastname" required= “required”> <br />
+
+	<h3>Do you live in the jungle</h3>
+
+		<label>Yes </label><input type="radio" name="yes" value="yes">
+
+		<label>No </label><input type="radio" name="no" value="no">
+
+		<label>Kind of</label><input type="radio" name="kindof" value="kindof"><br />
+
+	<h3>How can we get a hold of you if you get lost in the jungle?</h3>
+
+		<label>Email <input type = “email” name= “email-address” required= “required” placeholder= example@example.com ><br />
+
+		<label>Tel </label>
+
+			<input type = “tel” name= “phone” required= “required” maxlength="3" placeholder= 000> -
+
+ 			<input type = “tel” name= “phone” required= “required” maxlength="3" placeholder= 000> -
+
+			<input type = “tel” name= “phone” required= “required” maxlength="4" placeholder= 0000> <br />
+
+
+	<h3>Are you bringing a guest?</h3>
+
+			<label>Yes </label><input type="radio" name="yes" value="yes">
+	
+			<label>No </label><input type="radio" name="no" value="no">
+
+		<h4><label>How many guests do you plan on bringing?</label></h4>
+￼
+	<input type=“number” name="guest_number" minimum="1" maximum="7"/>
+
+		<h4>Your Guest Name</h4>
+
+			<label>First: </label><input type="text" name="guest_firstname"> <br />
+
+			<label>Last: </label><input type="text" name="guest_lastname"> <br />
+
+
+<h3>Dont have a GPS? Well it's not like you need one with your fancy Smart one.</h3>
+
+	<h3>However in the case you don't have niether of them...
+
+		<div> <!--First Block START-->
+
+			<form method="get" action="http://www.google.com/">
+
+				Search for a new smart phone ( one with GPS ofcourse )<input type="search" name="search" /> <input type="submit" value="Search" />
+
+			</form>
+
+	</div> <!--First Block END-->
+
+		<h4><label>How many cell phones did you find that you like?</label></h4>
+
+			<input type= “number” name= “sweater_rank” value="5"/>
+
+		<h3>If you needed some supplies for the jungle, which of these online stores would you choose?</h3>
+		
+			<label>Holiday Shopping Store: </label><input type="url" name="url" list="mydata"/>
+	
+				<datalist id="mydata">
+
+					<option label="amazon.com" value="http://www.amazon.com">
+
+					<option label="walmart.com" value="http://www.walmart.com">
+
+					<option label="bestbuy.com" value="http://www.bestbuy.com">
+
+				</datalist>
+
+	<div><p>Hold on now, you're almost out of the jungle...</p><progress value="75" max="100">75%</progress></div>
+
+		<h3><label>What time will you arrive?</label></h3>
+
+			<input type=“time” name=“best_time” />
+
+		<h3><label>What day will you join the jungle rats?</label></h3>
+
+			<input type = “date” name= “best_date” />
+￼
+	<h3><label>What about a range?</label></h3>
+	
+			1<input type= “range” name= “amount”/>10
+
+			
+			<h2>Ok, last question</h2>
+
+				<h3><label>What's your favorite color?</label></h3>
+		
+					<input type=“color” name=“color_choice” />
+
+				<h3>You're done, now git... well submit first.</h3>
+
+			<div><input type="submit" value="Submit"></div>
+
+		</form> 
+
+	</body>
+
+</html>
