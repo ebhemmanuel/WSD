@@ -1,59 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+	<!DOCTYPE html>
+	<html lang="en">
 
-	<head>
+		<head>
+			
+			<title>Todays thing</title>
+			<meta charset="utf-8" />
 		
-		<title>Todays thing</title>
-		<meta charset="utf-8" />
-	
-	</head>
-	
-	<body>
+		</head>
+		
+		<body>
 
 		<h1>Random Survey</h1>
 
-		<form name="input" action="email" method="get">
-
-			<p>About You</p>
 			
-			First name: <input type="text" name="firstname"> <br />
-			
-			Male <input type="radio" name="sex" value="male">
-			
-			Female <input type="radio" name="sex" value="female"><br />
-			
-			<p>Do you own a type of transportation?<p>
+			<form name="input" action="ebh.emmanuel@gmail.com" method="get">
 
-				<small>Choose all that apply</small><br />
+				<fieldset>
 
-					<input type="checkbox" name="vehicle" value="Skateboard">Skateboard 
-					<input type="checkbox" name="vehicle" value="Rollerblades">Motorcycle<br />
-					<input type="checkbox" name="vehicle" value="Bike">Bike
-					<input type="checkbox" name="vehicle" value="Car">Car
+				<legend><p>About You</p></legend>
+				
+					First name:<label><input type="text" name="firstname" id="firstname" title="input your first name"></label>  <br />
 
-			<p>What is your favorite form of transportation</p>
-				 <select>
- 					<option value="Bike">Bike</option>
- 					<option value="Car">Car</option>
-  					<option value="Rollerblades">Motorcycle</option>
-  					<option value="Skateboard">Skateboard</option>
-				</select> 
-
-				<p>Why</p>
+					Last name:<label><input type="text" name="lastname" id="lastname" title="input your last name"></label>  <br />
+				
+					<label for="male">Male <input type="radio" name="sex" value="male"></label> <br />
 					
-					<textarea rows="4" cols="50">Briefly tell us why it's your favorite form of transportation.</textarea> 
+					<label for="female">Female <input type="radio" name="sex" value="female"></label> <br />
 
-			<p>Submit your Survey</p>
+			</fieldset>	
+				
+				<fieldset>
 
-				<input type="submit" value="Submit">
+					<legend><p>Do you own a type of transportation?<p></legend>
 
-		</form> 
-	
-	<form method="get" action="http://en.wikipedia.org/w/index.php">
+					<small>Choose all that apply</small><br />
 
-			Search Wikipedia <input type="search" name="search" /> <input type="submit" value="Search" />	
+						<Label for="skateboard">Skateboard<input type="checkbox" name="vehicle" value="skateboard"></label> 
+						<label for="motorcycle">Motorcycle<input type="checkbox" name="vehicle" value="motorcycle">Motorcycle</label><br />
+						<label for="bike">Bike<input type="checkbox" name="vehicle" value="bike"></label>
+						<label for="Car">Car<input type="checkbox" name="vehicle" value="Car"></label>
 
-	</form>
-	
-	</body>
-</html>
+					</fieldset>	
+
+			<fieldset>		
+
+			<legend>	<p>What is your favorite form of transportation</p> </legend>
+					<label>-<select>
+	 					<label for="bike"><option value="bike" id="bike">bike</option></label>
+	 					<label for="car">Car<option value="car" id="car"></option></label>
+	  					<label for="motorcycle">Motorcycle<option value="motorcycle" id="motorcycle"></option></lable>
+	  					<label for="skateboard">Skateboard<option value="skateboard" id="skateboard"></option></label>
+					</select></label>
+
+					<p>Why</p>
+						
+						<label for="textarea"><textarea rows="4" cols="50" title="asdas">Briefly tell us why it's your favorite form of transportation.</textarea> </label>
+
+
+			</fieldset>			
+
+	<fieldset>
+				<legend><p>Submit your Survey</p></legend>
+
+					<label for="submit"><input type="submit" value="Submit"></label>
+
+			</form> 
+		
+		<form method="get" action="http://en.wikipedia.org/w/index.php">
+
+				Search Wikipedia <label for="search"><input type="search" name="search" title="search"/></label>	 <input type="submit" value="Search" />		
+	</fieldset>
+
+
+		</form>
+		
+		</body>
+		
+	</html>
